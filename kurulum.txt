@@ -1,0 +1,56 @@
+https://nodejs.org/dist/v4.2.6/node-v4.2.6-x64.msi bunu indirim full olarak kurdum.
+komut satirinda Desktop/nodejs_odev dizininde 
+
+# Bu işlem hem projenin bilgilerini saklıyor hem de sonradan kurulacak dosyaları gereksinimler olarak kaydediyor.
+# Oluşan dosyayı kullanarak farklı makinalara "npm install" komutu ile hızlıca gereksinimler kurulabilir.
+C:\Users\usr2033\Desktop\nodejs_odev>npm init 
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg> --save` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+name: (nodejs_odev)
+version: (1.0.0)
+description: nodejs_chat
+entry point: (index.js)
+test command:
+git repository:
+keywords: chat, hello_world
+author: user2033
+license: (ISC)
+About to write to C:\Users\usr2033\Desktop\nodejs_odev\package.json:
+
+{
+  "name": "nodejs_odev",
+  "version": "1.0.0",
+  "description": "nodejs_chat",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chat",
+    "hello_world"
+  ],
+  "author": "usr2033",
+  "license": "ISC"
+}
+
+
+Is this ok? (yes) yes
+
+C:\Users\usr2033\Desktop\nodejs_odev>npm --save install express socket.io jade 
+
+Bunların yüklenmesi bağlantı hızına göre 5 10 dk sürebiliyor. node_modules dizini oluşuyor. Artık kodlamaya geçebiliriz.
+
+Bu arada kodu çalıştırmak için yine aynı dizinde "node index.js" komutunu çalıştıracağız.
+C:\Users\usr2033\Desktop\nodejs_odev>node index.js

@@ -1,0 +1,57 @@
+https://nodejs.org/dist/v4.2.6/node-v4.2.6-x64.msi i installed this with full settings :)
+At Desktop/nodejs_odev directory
+
+
+# This op both saves the project info and dependencies for future installations
+# You can use file that will be created after this op for installing dependencies with "npm install" command.
+C:\Users\usr2033\Desktop\nodejs_odev>npm init 
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg> --save` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+name: (nodejs_odev)
+version: (1.0.0)
+description: nodejs_chat
+entry point: (index.js)
+test command:
+git repository:
+keywords: chat, hello_world
+author: user2033
+license: (ISC)
+About to write to C:\Users\usr2033\Desktop\nodejs_odev\package.json:
+
+{
+  "name": "nodejs_odev",
+  "version": "1.0.0",
+  "description": "nodejs_chat",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chat",
+    "hello_world"
+  ],
+  "author": "usr2033",
+  "license": "ISC"
+}
+
+
+Is this ok? (yes) yes
+
+C:\Users\usr2033\Desktop\nodejs_odev>npm --save install express socket.io jade 
+
+# The module installation can take 5 10 minutes according to your internet connection. Now we can code :D
+
+# By the way you can use "node index.js" command to run code at this directory.
+C:\Users\usr2033\Desktop\nodejs_odev>node index.js
