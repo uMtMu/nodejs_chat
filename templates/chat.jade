@@ -4,14 +4,14 @@ html
         script(src='/chat.js')
         script(src='/socket.io/socket.io.js')
     body
-        #content(style='width: 80%; height: 85%; margin: 0 0 10px 0; border: solid 1px #999; overflow-y: scroll;')
+        #content(style='width: 60%; height: 85%; margin: 0 0 10px 0; border: solid 1px #999; overflow-y: scroll;')
         .controls
             input.field(type='hidden', value=page_data.userID, id='userID')
             input.field(style='width:350px;', id='msgfield')
             input.send(type='button', value='send', id='sendbtn')
             input.send(type='button', value='alias', id='aliasbtn')
         h4#alias
-        #userlist(style='position: absolute; float:left; right: 5%; width: 10%; top: 0px;  border: 3px solid #73AD21; padding: 10px;')
+        #userlist(style='position: absolute; float:left; right: 300px; width: 10%; top: 0px;  border: 3px solid #73AD21; padding: 10px;')
             ul
                 each userinfo, user_id in page_data.users
                     li= user_id + " " + userinfo.alias
