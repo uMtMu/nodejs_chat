@@ -1,0 +1,29 @@
+The three musketeer's of clientside Web, *HTML*, *CSS* and *JavaScript*. They create
+the visual side of internet for mortals. While HTML separates the content with
+structural types, CSS says what will be displayed like and JavaScript says how
+page will be changed due to events. 
+
+[[file:report_img/layers_of_clientside_web.png]]
+
+The browsers are like interpreters with multiple languages(most of all). They
+can interpret HTML, CSS and JavaScript and create the visual translation of web
+pages. First step is to retrive web page with URI(Unified Resource
+Indentifier). It is the address where our HTML/CSS/JS codes resides. After The
+code downloaded by web browser, Browser's layout engine starts to transfor from
+markup to an interactive document known as  *rendering*. There are many
+rendering engines. Firefox uses Gecko, Safari uses Webkit and Chrome and Opera
+use Blink engines. This process includes handling both HTML and CSS. 
+
+[[file:report_img/flow_of_rendering.png]]
+
+The browser parses HTML to DOM(Document Object Model) tree or content tree. The
+rendering engine will parse style data both internal and external. With both the content
+tree and the style info engine will create render tree. This tree includes fields
+of HTML structures and visual infos from CSS code. After this, layout engine
+traverse the render tree and calculates exact positions of fields that should
+appear on screen. The next stage is painting the render tree to screen.
+
+[[file:report_img/main_flow.png]]
+
+
+For now our
